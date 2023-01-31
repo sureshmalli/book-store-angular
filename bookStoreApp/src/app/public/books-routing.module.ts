@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PublicComponent } from './public.component';
+import { PublicComponent } from './books.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AllBooksComponent } from './components/all-books/all-books.component';
 import { BookDetailsComponent } from './components/book-details/book-details.component';
@@ -9,7 +9,7 @@ import { BookDetailsComponent } from './components/book-details/book-details.com
 
 const routes: Routes = [
   {
-    path: 'public',
+    path: 'books',
     component: PublicComponent,
     children: [
       { path: 'all-books', component: AllBooksComponent },

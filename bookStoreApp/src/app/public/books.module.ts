@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './components/home/home.component';
 import { AllBooksComponent } from './components/all-books/all-books.component';
 import { BookDetailsComponent } from './components/book-details/book-details.component';
-import { PublicRoutingModule } from './public-routing.module';
-import { PublicComponent } from './public.component';
+import { PublicRoutingModule } from './books-routing.module';
+import { PublicComponent } from './books.component';
 
 
 
@@ -20,4 +20,4 @@ import { PublicComponent } from './public.component';
     PublicRoutingModule
   ]
 })
-export class PublicModule { }
+export class BooksModule { }

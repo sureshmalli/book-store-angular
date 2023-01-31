@@ -6,6 +6,7 @@ import { SharedModule } from './shared/shared.module';
 import { NotFoundComponent } from './shared/components/not-found/not-found.component';
 import { AuthComponent } from './auth/auth.component';
 import { UserComponent } from './user/user.component';
+import { BooksComponent } from './public/books.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,10 @@ const routes: Routes = [
   { path: 'auth', 
     component: AuthComponent,
     loadChildren:()=>import('./auth/auth.module').then(x=>x.AuthModule)
+   },
+   { path: 'books', 
+    component: BooksComponent,
+    loadChildren:()=>import('./books/books.module').then(x=>x.BooksModule)
    },
    { path: 'user/:userId', 
    component: UserComponent,
