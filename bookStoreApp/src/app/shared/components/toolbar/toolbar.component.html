@@ -1,19 +1,24 @@
 
  <p>
     <mat-toolbar color="primary">
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+     <!--  <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
         <mat-icon>menu</mat-icon>
+      </button> -->
+      <span>Book Store</span>
+      <span class="spacer"></span>
+      <button mat-icon-button routerLink="/">
+        <mat-icon>home</mat-icon>
       </button>
-      <span>My App</span>
-      <span class="example-spacer"></span>
-      <button mat-raised-button>Basic</button>
-      <button mat-stroked-button>Primary</button>
-      <button mat-flat-button color="warn">Warn</button>
-      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <button mat-button routerLink="books">All Books</button>
+      <button mat-button>SignUp</button>
+      <span class="spacer"></span>
+      <button mat-button routerLink="auth/Login">Login</button>
+      <button mat-button routerLink="auth/signUp">SignUp</button>
+      <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
         <mat-icon>favorite</mat-icon>
       </button>
       <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
         <mat-icon>share</mat-icon>
-      </button>
+      </button> -->
     </mat-toolbar>
   </p>

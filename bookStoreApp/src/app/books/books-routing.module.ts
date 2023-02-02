@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PublicComponent } from './books.component';
+import { BooksComponent } from './books.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AllBooksComponent } from './components/all-books/all-books.component';
 import { BookDetailsComponent } from './components/book-details/book-details.component';
@@ -8,14 +8,9 @@ import { BookDetailsComponent } from './components/book-details/book-details.com
 
 
 const routes: Routes = [
-  {
-    path: 'books',
-    component: PublicComponent,
-    children: [
-      { path: 'all-books', component: AllBooksComponent },
-      { path: 'book-details/:id', component: BookDetailsComponent },
-    ],
-  },
+  
+  {path:'',component:AllBooksComponent},
+  { path: ':id', component: BookDetailsComponent }
 ];
 
 @NgModule({
